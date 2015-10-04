@@ -3,43 +3,67 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/main_layout"
+    android:background="@drawable/pizza_bg">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_height="match_parent">
 
-        <GridLayout
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:text="@string/menu"
+                android:id="@+id/buttonMenu"
+                android:layout_weight="1"
+                android:background="@drawable/selected_background"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:text="@string/order"
+                android:id="@+id/buttonOrder"
+                android:layout_weight="1"
+                android:background="@drawable/unselected_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/menuButton" />
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:id="@+id/buttonStarter"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:background="@drawable/entree_bg" />
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/orderButton" />
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:id="@+id/buttonMainCourse"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:background="@drawable/plats_bg" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
-                android:id="@+id/menuTextView" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
-                android:id="@+id/orderTextView" />
-        </GridLayout>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:id="@+id/buttonDessert"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:background="@drawable/dessert_bg" />
+        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>

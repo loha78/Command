@@ -3,4 +3,5 @@
 
     <string name="menu">Menu</string>
     <string name="order">Commander</string>
+    <string name="action_settings">Reglages</string>
 </resources>
