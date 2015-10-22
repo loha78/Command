@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CommandeActivity"
+            android:label="@string/title_activity_commande" >
+        </activity>
+        <activity
+            android:name=".CuisineActivity"
+            android:label="@string/title_activity_cuisine" >
+        </activity>
     </application>
 
 </manifest>

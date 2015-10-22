@@ -1,7 +1,20 @@
 <resources>
     <string name="app_name">Pizza HII</string>
 
-    <string name="menu">Menu</string>
-    <string name="order">Commander</string>
+    <string name="cuisine">Cuisine</string>
+    <string name="commande">Commande</string>
+    <string name="nouvelleCommande">Saisir une nouvelle commande</string>
+    <string name="modifierCommande">Modifier une commande</string>
+    <string name="annulerCommande">Annuler une commande</string>
     <string name="action_settings">Reglages</string>
+    <string name="title_activity_commande">commandeActivity</string>
+
+    <string name="title_activity_cuisine">CuisineActivity</string>
+    <string name="title_activity_menu_button_fragment">menuButtonFragment</string>
+    <string name="title_activity_menu_cuisine_fragment">menuCuisineFragment</string>
+    <string name="title_activity_menu_commande_fragment">menuCommandeFragment</string>
+    <string name="title_activity_test_fragment">testFragment</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
