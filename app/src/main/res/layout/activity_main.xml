@@ -11,8 +11,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <LinearLayout
+         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -20,50 +19,29 @@
             <Button
                 android:layout_width="0dp"
                 android:layout_height="51dp"
-                android:text="@string/menu"
-                android:id="@+id/buttonMenu"
+                android:text="@string/cuisine"
+                android:id="@+id/buttonCuisine"
                 android:layout_weight="1"
-                android:background="@drawable/selected_background"/>
+                android:background="@drawable/selected_background"
+                android:onClick="alternerFragmentCuisineCommande"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="51dp"
-                android:text="@string/order"
-                android:id="@+id/buttonOrder"
+                android:text="@string/commande"
+                android:id="@+id/buttonCommande"
                 android:layout_weight="1"
-                android:background="@drawable/unselected_background"/>
+                android:background="@drawable/unselected_background"
+                android:onClick="alternerFragmentCuisineCommande"/>
         </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
+        <FrameLayout
+            android:id="@+id/mainFrameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp">
+            android:layout_gravity="center">
+        </FrameLayout>
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:id="@+id/buttonStarter"
-                android:scaleType="fitXY"
-                android:layout_weight="1"
-                android:background="@drawable/entree_bg" />
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:id="@+id/buttonMainCourse"
-                android:scaleType="fitXY"
-                android:layout_weight="1"
-                android:background="@drawable/plats_bg" />
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:id="@+id/buttonDessert"
-                android:scaleType="fitXY"
-                android:layout_weight="1"
-                android:background="@drawable/dessert_bg" />
-        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>
